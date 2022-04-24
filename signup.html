@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <body style="background-color: #055E68;">
+        <div class="img">
+            <a href="index.html"><img src="images/text-1650726862543.png" alt="Farming agro webservice"></a>
+        </div> 
+        <div class="container" style="background-color: white;">
+            <label for="" id="log">Signup</label>
+            <div class="login">
+                <form action="POST">
+                    <img src="images/username.jpg" alt="">
+                    <input type="text" placeholder="enter the username" id="userandpassword" required><br>
+                    <img src="images/password.webp" alt="">
+                    <input type="password" placeholder="enter the password" id="userandpassword" required><br>
+                    <img src="images/location-2028603-1710734.png" alt=""><br>
+                    <textarea name="" id="userandpassword" cols="10" rows="10" placeholder="address"></textarea><br>
+                    <img src="images/aadhaar-card-2032687-1718855.png" alt="">
+                    <input type="text" placeholder="enter the aadhar number" id="userandpassword" required><br>
+                    <img src="images/date-2694339-2236335.png" alt="">
+                    <input placeholder="date of birth" class="textbox-n" id="userandpassword"type="text" onfocus="(this.type='date')" id="userandpassword" required><br><br>
+                    <img src="images/email-2026367-1713640.png" alt="">
+                    <input type="email" placeholder="enter the email" id="userandpassword" >
+                    <img src="images/date-time-schedule-calender-planning-event-clock-8-3226.png" alt="">
+                    <select id="category" >
+                        <option value="" disabled selected>Choose the category</option>
+                        <option>Farmer</option>
+                        <option >Retailer</option>
+                    </select><br>
+                    <script type="text/javascript">
+                        var citiesByState = {
+                        Odisha: ["Bhubaneswar","Puri","Cuttack"],
+                        Maharashtra: ["Mumbai","Pune","Nagpur","shiridi"],
+                        Kerala: ["kochi","Kanpur","kolzhikode"],
+                        Tamilnadu:[" Ambasamudram","Anamali","Arakandanallur","Arantangi","Aravakurichi","Ariyalur","Arkonam","Arni","Aruppukottai","Attur","Avanashi","Batlagundu","Bhavani","Chengalpattu","Chengam","Chennai","Chidambaram","Chingleput","Coimbatore","Courtallam","Cuddalore","Cumbum","Denkanikoitah","Devakottai","Dharampuram","Dharmapuri","Dindigul","Erode","Gingee","Gobichettipalayam","Gudalur","Gudiyatham","Harur","Hosur","Jayamkondan","Kallkurichi","Kanchipuram","Kangayam","Kanyakumari","Karaikal","Karaikudi","Karur","Keeranur","Kodaikanal","Kodumudi","Kotagiri","Kovilpatti","Krishnagiri","Kulithalai","Kumbakonam","Kuzhithurai","Madurai","Madurantgam","Manamadurai","Manaparai","Mannargudi","Mayiladuthurai","Mayiladuthurai","Mettupalayam","Metturdam","Mudukulathur","Mulanur","Musiri","Nagapattinam","Nagarcoil","Namakkal","Nanguneri","Natham","Neyveli","Nilgiris","Oddanchatram","Omalpur","Ootacamund","Ooty","Orathanad","Palacode","Palani","Palladam","Papanasam","Paramakudi","Pattukottai","Perambalur","Perundurai","Pollachi","Rasipuram"]
+                        }
+                        function makeSubmenu(value) {
+                        if(value.length==0) document.getElementById("citySelect").innerHTML = "<option></option>";
+                        else {
+                        var citiesOptions = "";
+                        for(cityId in citiesByState[value]) {
+                        citiesOptions+="<option>"+citiesByState[value][cityId]+"</option>";
+                        }
+                        document.getElementById("citySelect").innerHTML = citiesOptions;
+                        }
+                        }
+                        function displaySelected() { var State = document.getElementById("StateSelect").value;
+                        var city = document.getElementById("citySelect").value;
+                        alert(State+"\n"+city);
+                        }
+                        function resetSelection() {
+                        document.getElementById("StateSelect").selectedIndex = 0;
+                        document.getElementById("citySelect").selectedIndex = 0;
+                        }
+                        </script>
+                        </head>
+                        <body onload="resetSelection()">                        
+                        <select id="StateSelect" size="1" onchange="makeSubmenu(this.value)">select the state
+                        <option value="" disabled selected>Choose State</option>
+                        <option>Odisha</option>
+                        <option>Maharashtra</option>
+                        <option>Kerala</option>
+                        <option>Tamilnadu</option>
+                        </select><br>
+        
+                        <select id="citySelect" size="1" >
+                        <option value="" disabled selected>Choose City</option>
+                        <option></option>
+                    </select><br>
+                    <a href="#"><button value="submit" id="sub">submit</button></a>                    
+                </form>
+            </div>
+            <div class="forgot">
+                <input type="checkbox" name="Remember me" placeholder="Remember Me" id="hey" checked><label for="Remember me" id="lable">Remember Me</label>
+                <p><a href="#">Forgot Password</a></p>
+            </div>
+        </div>
+        <div class="bottom-container">
+            <table>
+                <tr><td><a href="www.linkedin.com" id="l">follow us on linked in</a></td></tr>
+                <tr><td><a href="www.instagram.com" id="l">follow us on instagram</a></td></tr>
+                <tr><td><a href="facebook.com" id="l">follow us on facebook</a></td></tr>
+            </table>
+        </div>
+        </html>
+    </body>
+    
+</body>
+</html>
